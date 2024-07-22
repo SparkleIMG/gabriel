@@ -20,16 +20,16 @@
             const imageGallery = document.getElementById('image-gallery');
             const images = [
                 'sparkle.png',
-                'image2.jpg',
-                'image3.jpg' // Añade aquí los nombres de las imágenes del usuario
+                'SevenX.jpeg',
+                'DCT.png' // Añade aquí los nombres de las imágenes del usuario
             ];
 
             images.forEach(image => {
                 const imgElement = document.createElement('img');
-                imgElement.src = `images/${image}`;
+                imgElement.src = `${image}`;
                 imgElement.alt = image;
                 imgElement.className = 'gallery-image';
-                imgElement.onclick = () => window.open(`images/${image}`, '_blank');
+                imgElement.onclick = () => window.open(`${image}`, '_blank');
                 imageGallery.appendChild(imgElement);
             });
         });
