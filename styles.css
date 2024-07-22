@@ -27,3 +27,23 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery-image {
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+    border: 2px solid #7e57c2;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.1);
+}
